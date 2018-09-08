@@ -1,0 +1,12 @@
+name = "Hugo Final Boss"
+license = "MIT"
+licenselink = "https://github.com/juliosampaio/hugo-final-boss/blob/master/LICENSE"
+description = ""
+homepage = "https://themes.gohugo.io/hugo-final-boss/"
+tags = [rpg, portfolio, personal]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Julio Sampaio"
+  homepage = "https://juliosampaio.com"
