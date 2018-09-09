@@ -1,0 +1,36 @@
+{
+  "name": "hugo-final-boss",
+  "version": "0.1.0",
+  "description": "A RPG themed Hugo theme. That is it ;)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliosampaio/hugo-final-boss.git"
+  },
+  "keywords": [
+    "hugo",
+    "static-site",
+    "theme",
+    "rpg"
+  ],
+  "author": "Julio Sampaio <juliodssampaio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliosampaio/hugo-final-boss/issues"
+  },
+  "homepage": "https://github.com/juliosampaio/hugo-final-boss#readme",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
