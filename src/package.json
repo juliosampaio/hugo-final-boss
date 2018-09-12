@@ -4,7 +4,7 @@
   "description": "A RPG themed Hugo theme. That is it ;)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --watch --mode production"
   },
   "repository": {
     "type": "git",

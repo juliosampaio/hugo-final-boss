@@ -1,1 +1,52 @@
-Header
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#">
+        <span class="icon has-text-danger">
+          <i class="fas fa-heart"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-heart"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-heart"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-heart"></i>
+        </span>
+        <span class="icon has-text-danger">
+          <i class="fas fa-heart"></i>
+        </span>
+      </a>
+    </div>
+    <div class="navbar-end">
+      {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren }}
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" title="{{ .Title }}">
+          {{ .Name }}
+        </a>
+        <div class="navbar-dropdown">
+          {{ range .Children }}
+          <a class="navbar-item" href="{{.URL}}" title="{{ .Title }}">
+            {{ .Name }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ else }}
+      <a class="navbar-item" href="{{.URL}}" title="{{ .Title }}">
+        {{ .Name }}
+      </a>
+      {{ end }} {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
