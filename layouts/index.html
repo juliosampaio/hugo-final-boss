@@ -1,1 +1,14 @@
-{{ define "main" }} wow this is the index {{ .Content }} {{ end }}
+{{ define "main" }}
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        {{.Site.Params.author}}
+      </h1>
+      <p class="subtitle">
+        {{.Site.Params.class}} <strong>@{{.Site.Params.guild}}</strong>!
+      </p>
+    </div>
+  </section>
+</main>
+{{ end }}
